@@ -66,6 +66,12 @@ const componentLinks: ComponentLinkProps[] = [
     icon: 'record_voice_over',
     link: '/page4',
   },
+  {
+    title: 'The Page 5',
+    caption: '@quasarframework',
+    icon: 'rss_feed',
+    link: '/page5',
+  },
 ];
 
 const leftDrawerOpen = ref(false);
