@@ -41,7 +41,14 @@ import ComponentLink, {
   ComponentLinkProps,
 } from 'components/ComponentLink.vue';
 
-const componentLinks: ComponentLinkProps[] = [];
+const componentLinks: ComponentLinkProps[] = [
+  {
+    title: 'The Page 1',
+    caption: 'quasar.dev',
+    icon: 'school',
+    link: '/page1',
+  },
+];
 
 const leftDrawerOpen = ref(false);
 
