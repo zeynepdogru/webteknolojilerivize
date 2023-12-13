@@ -96,6 +96,12 @@ const componentLinks: ComponentLinkProps[] = [
     icon: 'rss_feed',
     link: '/page9',
   },
+  {
+    title: 'The Page 10',
+    caption: '@quasarframework',
+    icon: 'rss_feed',
+    link: '/page10',
+  },
 ];
 
 const leftDrawerOpen = ref(false);
