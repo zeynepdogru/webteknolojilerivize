@@ -11,15 +11,22 @@
       style="
         max-width: 400px;
         background-color: #ffffff;
-        border: 2px solid #ff4081;
-        border-radius: 8px;
+        border: 1px solid #ff4081;
       "
     >
-      <h6>Üye Girişi</h6>
+      <h6 style="margin-top: 0px; margin-bottom: 10px; font-size: 18px">
+        ÜYE GİRİŞİ
+      </h6>
       <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
-        <q-input filled v-model="email" label="E-mail adresiniz"></q-input>
+        <q-input
+          style="border: 1px solid rgb(222, 221, 221)"
+          filled
+          v-model="email"
+          label="E-mail adresiniz"
+        ></q-input>
 
         <q-input
+          style="border: 1px solid rgb(222, 221, 221)"
           filled
           type="password"
           v-model="password"
@@ -39,7 +46,11 @@
             flat
             dense
             label="Şifremi Unuttum"
-            style="text-align: right; cursor: pointer"
+            style="
+              text-align: right;
+              cursor: pointer;
+              text-transform: capitalize;
+            "
             @click="forgotPassword"
           ></q-btn>
         </div>
@@ -56,19 +67,36 @@
             label="Giriş Yap"
             type="submit"
             color="pink"
-            style="width: 100%; margin-bottom: 8px"
+            style="
+              width: 100%;
+              height: 45px;
+              margin-bottom: 8px;
+              border-radius: 30px;
+            "
           ></q-btn>
 
-          <p style="margin-bottom: 8px; text-align: center">
-            Üye olun, fırsat ve kampanyalardan üyelere özel avantajlardan
-            yararlanın.
-          </p>
+          <div style="margin-bottom: 8px; text-align: left">
+            <p
+              style="
+                font-weight: 400;
+                font-size: 16px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+              "
+            >
+              ÜYE OLMAK İÇİN
+            </p>
+            <p style="font-weight: 300">
+              Üye olun, fırsat ve kampanyalardan üyelere özel avantajlardan
+              yararlanın.
+            </p>
+          </div>
 
           <q-btn
             label="Üye Olun"
             type="button"
             color="red"
-            style="width: 100%"
+            style="width: 100%; height: 45px; border-radius: 30px"
             @click="goToSignUp"
           ></q-btn>
         </div>

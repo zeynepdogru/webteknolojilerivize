@@ -22,7 +22,7 @@
       width: 250px;
       border-bottom: 1px solid grey;
       border-top: 1px solid grey;
-      overflow-y: auto;
+      overflow-y: scroll;
       max-height: 150px;
     "
   >

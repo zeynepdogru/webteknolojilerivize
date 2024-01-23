@@ -56,16 +56,17 @@ export default {
     };
 
     const buttons = [
+      { color: 'pink', label: 'Markalar' },
       { color: 'pink', label: 'Makyaj' },
-      { color: 'pink', label: '' },
-      { color: 'pink', label: '' },
-      { color: 'pink', label: '' },
-      { color: 'pink', label: '' },
-      { color: 'pink', label: '' },
-      { color: 'pink', label: '' },
-      { color: 'pink', label: '' },
-      { color: 'pink', label: '' },
-      { color: 'pink', label: '' },
+      { color: 'pink', label: 'Cilt Bakım' },
+      { color: 'pink', label: 'Saç Bakım' },
+      { color: 'pink', label: 'Parfüm' },
+      { color: 'pink', label: 'Kişisel Bakım' },
+      { color: 'pink', label: 'Erkek Bakım' },
+      { color: 'pink', label: 'Anne&Bebek' },
+      { color: 'pink', label: 'Ev&Yaşam' },
+      { color: 'pink', label: 'Kampanyalar' },
+      { color: 'pink', label: 'Blog' },
     ];
 
     return {

@@ -9,7 +9,7 @@
       autoplay="true"
       autoplayTimeOut="3000"
       autoPlayHoverPause="true"
-      style="width: 100%"
+      style="width: 100%; height: 600px"
     >
       <q-carousel-slide
         v-for="(item, index) in items"
@@ -35,35 +35,35 @@ const slide = ref(1);
 const items = ref([
   {
     imgSrc:
-      'https://www.eveshop.com.tr/custom/product_display/17014529611ybs-kapak-banner.jpg',
+      'https://www.eveshop.com.tr/custom/product_display/1705504528116-19ocak-air-banner.jpg',
   },
   {
     imgSrc:
-      'https://www.eveshop.com.tr/custom/product_display/17016762171BGOJE-KAMPANYA-BANNER.jpg',
+      'https://www.eveshop.com.tr/custom/product_display/17055255151Signal-banner.jpg',
   },
   {
     imgSrc:
-      'https://www.eveshop.com.tr/custom/product_display/17014189071BG-SIVI-SABUN-BANNER.jpg',
+      'https://www.eveshop.com.tr/custom/product_display/1705504550116-19ocak-ruj-banner.jpg',
   },
   {
     imgSrc:
-      'https://www.eveshop.com.tr/custom/product_display/17015019201KBM-BANNER.jpg',
+      'https://www.eveshop.com.tr/custom/product_display/1705504568116-19ocak-sky-banner.jpg',
   },
   {
     imgSrc:
-      'https://www.eveshop.com.tr/custom/product_display/170137468311-6ARALIK-BANNER.jpg',
+      'https://www.eveshop.com.tr/custom/product_display/1705504585116-19ocak-telescopic-banner.jpg',
   },
   {
     imgSrc:
-      'https://www.eveshop.com.tr/custom/product_display/170141652411920x500.jpg',
+      'https://www.eveshop.com.tr/custom/product_display/1705504609116-19ocak-truematch-banner.jpg',
   },
   {
     imgSrc:
-      'https://www.eveshop.com.tr/custom/product_display/16989933831Yayinda_1920x500.jpg',
+      'https://www.eveshop.com.tr/custom/product_display/17059292991GENEL-BANNER.jpg',
   },
   {
     imgSrc:
-      'https://www.eveshop.com.tr/custom/product_display/17015017651IST-BU%CC%88YU%CC%88KADA-ac%CC%A7ilis%CC%A7-banner-2li.jpg',
+      'https://www.eveshop.com.tr/custom/product_display/17055047531ysb-serum-1920x720-2.jpg',
   },
 ]);
 </script>

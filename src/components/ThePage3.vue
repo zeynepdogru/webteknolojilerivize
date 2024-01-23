@@ -31,6 +31,7 @@
                 color: pink;
                 border: 1px solid palevioletred;
                 border-radius: 100%;
+                box-shadow: 0px 1px 5px grey;
                 width: 25px;
                 height: 25px;
               "
@@ -53,6 +54,9 @@
                 </div>
                 <div>{{ product.productName }}</div>
                 <div>{{ product.price }}</div>
+                <div style="margin-top: 10px">
+                  {{ product.saleprice }}
+                </div>
               </div>
             </q-card-actions>
           </q-card>
@@ -75,13 +79,14 @@
                 color: pink;
                 border: 1px solid palevioletred;
                 border-radius: 100%;
+                box-shadow: 0px 1px 5px grey;
                 width: 25px;
                 height: 25px;
               "
               name="fa-regular fa-heart"
             />
 
-            <q-card-actions style="text-align: center">
+            <q-card-actions style="text-align: center; width: 100%">
               <q-btn
                 class="capitalize hov"
                 style="margin-right: -10px; width: 60%"
@@ -97,6 +102,9 @@
                 </div>
                 <div>{{ product.productName }}</div>
                 <div>{{ product.price }}</div>
+                <div style="margin-top: 10px; background-color: pink">
+                  {{ product.saleprice }}
+                </div>
               </div>
             </q-card-actions>
           </q-card>
@@ -119,6 +127,7 @@
                 color: pink;
                 border: 1px solid palevioletred;
                 border-radius: 100%;
+                box-shadow: 0px 1px 5px grey;
                 width: 25px;
                 height: 25px;
               "
@@ -141,6 +150,9 @@
                 </div>
                 <div>{{ product.productName }}</div>
                 <div>{{ product.price }}</div>
+                <div style="margin-top: 10px">
+                  {{ product.saleprice }}
+                </div>
               </div>
             </q-card-actions>
           </q-card>
@@ -173,6 +185,7 @@ const products1 = ref([
     productBrand: 'Versace',
     productName: ' Red Jeans Parfüm',
     price: '849,99 TL',
+    saleprice: 'Eve kart ile 25.00 TL',
     imageUrl:
       'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1006910_1_SMALL.jpg',
   },
@@ -180,6 +193,7 @@ const products1 = ref([
     productBrand: 'Palette',
     productName: ' Yoğun Kalıcı Renkler',
     price: '149,99 TL',
+    saleprice: 'Eve kart ile 25.00 TL',
     imageUrl:
       'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1001355_1_SMALL.jpg',
   },
@@ -187,6 +201,7 @@ const products1 = ref([
     productBrand: 'Dalin ',
     productName: 'Bebek Kolonyası',
     price: '69,95 TL',
+    saleprice: 'Eve kart ile 25.00 TL',
     imageUrl:
       'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1026514_1_SMALL.jpg',
   },
@@ -194,6 +209,7 @@ const products1 = ref([
     productBrand: 'Signal',
     productName: 'White Now',
     price: '154,95 TL',
+    saleprice: 'Eve kart ile 25.00 TL',
     imageUrl:
       'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1001643_1_SMALL.jpg',
   },
@@ -201,6 +217,7 @@ const products1 = ref([
     productBrand: 'Dove',
     productName: ' Fresh Sıvı Sabun',
     price: '38,95 TL',
+    saleprice: 'Eve kart ile 25.00 TL',
     imageUrl:
       'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1002271_1_SMALL.jpg',
   },
@@ -213,6 +230,7 @@ export const products2 = ref([
     productBrand: 'Nascita',
     productName: ' Fondöten Süngeri',
     price: '87,50 TL',
+    saleprice: 'Eve kart ile 25.00 TL',
     imageUrl:
       'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1025767_1_SMALL.jpg',
   },
@@ -220,6 +238,7 @@ export const products2 = ref([
     productBrand: 'Axe',
     productName: ' Erkek Deodorant Sprey',
     price: '136,50 TL',
+    saleprice: 'Eve kart ile 25.00 TL',
     imageUrl:
       'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1001633_1_SMALL.jpg',
   },
@@ -227,6 +246,7 @@ export const products2 = ref([
     productBrand: 'Maruderm',
     productName: ' Yüz Yıkama Jeli',
     price: '296,95 TL',
+    saleprice: 'Eve kart ile 25.00 TL',
     imageUrl:
       'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1026248_1_SMALL.jpg',
   },
@@ -234,6 +254,7 @@ export const products2 = ref([
     productBrand: 'Rexona',
     productName: ' Çiçeksi Deodorant',
     price: '130,50 TL',
+    saleprice: 'Eve kart ile 25.00 TL',
     imageUrl:
       'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1013870_1_SMALL.jpg',
   },
@@ -241,6 +262,7 @@ export const products2 = ref([
     productBrand: 'Signal',
     productName: ' Diş Macunu -Gold',
     price: '147,50 TL',
+    saleprice: 'Eve kart ile 25.00 TL',
     imageUrl:
       'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1004236_1_SMALL.jpg',
   },
@@ -288,6 +310,7 @@ export default {
           productBrand: 'Versace',
           productName: ' Red Jeans Parfüm',
           price: '849,99 TL',
+          saleprice: '25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1006910_1_SMALL.jpg',
         },
@@ -295,6 +318,7 @@ export default {
           productBrand: 'Palette',
           productName: ' Yoğun Kalıcı Renkler',
           price: '149,99 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1001355_1_SMALL.jpg',
         },
@@ -302,6 +326,7 @@ export default {
           productBrand: 'Dalin ',
           productName: 'Bebek Kolonyası',
           price: '69,95 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1026514_1_SMALL.jpg',
         },
@@ -309,6 +334,7 @@ export default {
           productBrand: 'Signal',
           productName: 'White Now',
           price: '154,95 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1001643_1_SMALL.jpg',
         },
@@ -316,6 +342,7 @@ export default {
           productBrand: 'Dove',
           productName: ' Fresh Sıvı Sabun',
           price: '38,95 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1002271_1_SMALL.jpg',
         },
@@ -325,6 +352,7 @@ export default {
           productBrand: 'Nascita',
           productName: ' Fondöten Süngeri',
           price: '87,50 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1025767_1_SMALL.jpg',
         },
@@ -332,6 +360,7 @@ export default {
           productBrand: 'Axe',
           productName: ' Erkek Deodorant Sprey',
           price: '136,50 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1001633_1_SMALL.jpg',
         },
@@ -339,6 +368,7 @@ export default {
           productBrand: 'Maruderm',
           productName: ' Yüz Yıkama Jeli',
           price: '296,95 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1026248_1_SMALL.jpg',
         },
@@ -346,6 +376,7 @@ export default {
           productBrand: 'Rexona',
           productName: ' Çiçeksi Deodorant',
           price: '130,50 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1013870_1_SMALL.jpg',
         },
@@ -353,6 +384,7 @@ export default {
           productBrand: 'Signal',
           productName: ' Diş Macunu -Gold',
           price: '147,50 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1004236_1_SMALL.jpg',
         },
@@ -362,6 +394,7 @@ export default {
           productBrand: 'Morfose',
           productName: 'Turuncu Saç Spreyi',
           price: '99,90 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1020978_1_SMALL.jpg',
         },
@@ -369,6 +402,7 @@ export default {
           productBrand: 'Pastel ',
           productName: 'Dudak Parlatıcısı',
           price: '84,95 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1027296_1_SMALL.jpg',
         },
@@ -376,6 +410,7 @@ export default {
           productBrand: 'Golden Rose',
           productName: ' Emily 101',
           price: '44,95 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1002370_1_SMALL.jpg',
         },
@@ -383,6 +418,7 @@ export default {
           productBrand: 'Beauty Girl',
           productName: ' Maskara',
           price: '229,95 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1028970_1_SMALL.jpg',
         },
@@ -390,6 +426,7 @@ export default {
           productBrand: 'Flormar',
           productName: ' Pearly Parlak Oje',
           price: '49,50 TL',
+          saleprice: 'Eve kart ile 25.00 TL',
           imageUrl:
             'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1013797_1_SMALL.jpg',
         },

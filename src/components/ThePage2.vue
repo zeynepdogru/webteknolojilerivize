@@ -2,16 +2,77 @@
   <q-footer style="position: absolute; background-color: #dadada52">
     <div
       class="row q-gutter-md"
-      style="font-size: 50px; color: #696969; margin: 15px 0 15px 200px"
+      style="
+        font-size: 40px;
+        width: 1150px;
+        color: #696969;
+        margin: 15px 0px 15px 200px;
+      "
     >
-      <q-icon name="fa-solid fa-box" />
-      <h6 style="color: black; font-size: 15px">Ücretsiz Kargo</h6>
-      <q-icon name="fa-regular fa-circle-check" />
-      <h6 style="color: black; font-size: 15px">Güvenilir Alışveriş</h6>
-      <q-icon name="fa-solid fa-rotate-left" />
-      <h6 style="color: black; font-size: 15px">Ücretsiz İade</h6>
-      <q-icon name="fa-solid fa-bullhorn" />
-      <h6 style="color: black; font-size: 15px">Sürpriz Kampanyalar</h6>
+      <q-icon style="margin-right: -20px" name="fa-solid fa-box" />
+      <div class="col-2 q-gutter-md">
+        <h6 style="color: black; font-size: 15px; margin-top: 0px">
+          ÜCRETSİZ KARGO
+        </h6>
+        <h6
+          style="
+            color: grey;
+            font-size: 17px;
+            font-weight: 300;
+            margin-top: -25px;
+          "
+        >
+          300 TL ve Üzeri Kargolarınız Bizden
+        </h6>
+      </div>
+      <q-icon style="margin-right: -20px" name="fa-regular fa-circle-check" />
+      <div class="col-2 q-gutter-md">
+        <h6 style="color: black; font-size: 15px; margin-top: 0px">
+          GÜVENİLİR ALIŞVERİŞ
+        </h6>
+        <h6
+          style="
+            color: grey;
+            font-size: 17px;
+            font-weight: 300;
+            margin-top: -25px;
+          "
+        >
+          256 Bit SSL Sertifikasıyla Güvenilir
+        </h6>
+      </div>
+      <q-icon style="margin-right: -20px" name="fa-solid fa-rotate-left" />
+      <div class="col-2 q-gutter-md">
+        <h6 style="color: black; font-size: 15px; margin-top: 0px">
+          ÜCRETSİZ İADE
+        </h6>
+        <h6
+          style="
+            color: grey;
+            font-size: 17px;
+            font-weight: 300;
+            margin-top: -25px;
+          "
+        >
+          30 Gün İçinde Ücretsiz İade İmkânı
+        </h6>
+      </div>
+      <q-icon style="margin-right: -20px" name="fa-solid fa-bullhorn" />
+      <div class="col-2 q-gutter-md">
+        <h6 style="color: black; font-size: 15px; margin-top: 0px">
+          SÜRPRİZ KAMPANYALAR
+        </h6>
+        <h6
+          style="
+            color: grey;
+            font-size: 17px;
+            font-weight: 300;
+            margin-top: -25px;
+          "
+        >
+          Size Özel ve Uygun Kampanyalar
+        </h6>
+      </div>
     </div>
     <q-container>
       <div class="custom-container" style="background-color: white">

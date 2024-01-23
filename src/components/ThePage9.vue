@@ -1,6 +1,12 @@
 <template>
   <q-footer
-    style="position: absolute; bottom: 0; right: 0; background-color: #dadada52"
+    style="
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #dadada52;
+      font-weight: 400;
+    "
   >
     <div class="q-gutter-md row justify-center" style="margin-top: 15px">
       <q-card
@@ -10,14 +16,20 @@
         style="background-color: #dadada05"
       >
         <q-card-actions style="width: auto">
-          <div style="font-weight: 300; color: black">
-            <div>
+          <div style="font-weight: 400; color: black; font-size: 15px">
+            <div style="font-weight: 500; padding-bottom: 5px; font-size: 18px">
               {{ category.categoryName }}
             </div>
             <div
-              style="border-bottom: 1px solid; width: 45%; margin-top: 5px"
+              style="
+                border-bottom: 2px solid;
+                width: 55px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+              "
             ></div>
             <div
+              style="padding-bottom: 5px"
               class="footer"
               v-for="(subTitle, subtitleIndex) in category.categorySubTitles"
               :key="subtitleIndex"
@@ -40,11 +52,19 @@
       <q-icon name="fab fa-twitter" />
       <q-icon name="fab fa-linkedin" />
     </div>
-    <h6 style="color: black; margin-left: 270px">
+    <h6
+      style="
+        color: black;
+        margin-left: 230px;
+        font-weight: 200;
+        margin-bottom: 10px;
+      "
+    >
       Uygulamamızı İndirmek İçin QR Kodu Okutun
     </h6>
+
     <q-img
-      style="height: 130px; width: 130px; margin-left: 270px"
+      style="height: 130px; width: 130px; margin-left: 230px"
       src="https://www.eveshop.com.tr/resman/uploads/qrkod.png"
     />
     <q-img
