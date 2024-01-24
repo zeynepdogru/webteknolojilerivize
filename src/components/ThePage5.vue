@@ -1,5 +1,5 @@
 <template>
-  <div class="q-xs" style="margin-top: 10px">
+  <div class="q-xs" style="margin-top: 10px; height: 40px">
     <q-btn-group spread>
       <q-btn
         class="capitalize"

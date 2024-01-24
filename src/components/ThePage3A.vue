@@ -1,6 +1,6 @@
 <template>
   <h4 style="text-align: center; margin-top: 15px; margin-bottom: 0px">
-    En Trend Ürünler
+    Göz Atmadan Geçmeyin
   </h4>
 
   <div class="q-pa-md">
@@ -18,7 +18,6 @@
       <q-carousel-slide :name="1" class="column no-wrap">
         <div class="q-gutter row">
           <q-card
-            id="cart"
             v-for="(product, index) in products1"
             :key="index"
             class="my-card main"
@@ -173,25 +172,20 @@
 <script setup>
 import { ref } from 'vue';
 
-//for pinia productStore
-import { useProductStore } from 'stores/ProductStore';
-const productStore = useProductStore();
-productStore.fill();
-
 const products1 = ref([
   {
     productBrand: 'Versace',
     productName: ' Red Jeans Parfüm',
     price: '849,99 TL',
     imageUrl:
-      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1006910_1_SMALL.jpg',
+      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1020640_1_SMALL.jpg',
   },
   {
     productBrand: 'Palette',
     productName: ' Yoğun Kalıcı Renkler',
     price: '149,99 TL',
     imageUrl:
-      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1025028_1_SMALL.jpg',
+      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1027303_1_SMALL.jpg',
   },
   {
     productBrand: 'Dalin ',
@@ -205,14 +199,14 @@ const products1 = ref([
     productName: 'White Now',
     price: '154,95 TL',
     imageUrl:
-      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1028305_1_SMALL.jpg',
+      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1028552_1_SMALL.jpg',
   },
   {
     productBrand: 'Dove',
     productName: ' Fresh Sıvı Sabun',
     price: '38,95 TL',
     imageUrl:
-      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1002271_1_SMALL.jpg',
+      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1028290_1_SMALL.jpg',
   },
 ]);
 </script>
@@ -224,21 +218,21 @@ export const products2 = ref([
     productName: ' Fondöten Süngeri',
     price: '87,50 TL',
     imageUrl:
-      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1025767_1_SMALL.jpg',
+      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1003174_1_SMALL.jpg',
   },
   {
     productBrand: 'Axe',
     productName: ' Erkek Deodorant Sprey',
     price: '136,50 TL',
     imageUrl:
-      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1001633_1_SMALL.jpg',
+      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1012401_1_SMALL.jpg',
   },
   {
     productBrand: 'Maruderm',
     productName: ' Yüz Yıkama Jeli',
     price: '296,95 TL',
     imageUrl:
-      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1026248_1_SMALL.jpg',
+      'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1011863_1_SMALL.jpg',
   },
   {
     productBrand: 'Rexona',
@@ -343,7 +337,7 @@ export default {
           productName: ' Erkek Deodorant Sprey',
           price: '136,50 TL',
           imageUrl:
-            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1001633_1_SMALL.jpg',
+            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1000333_1_SMALL.jpg',
         },
         {
           productBrand: 'Maruderm',
@@ -357,7 +351,7 @@ export default {
           productName: ' Çiçeksi Deodorant',
           price: '130,50 TL',
           imageUrl:
-            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1013870_1_SMALL.jpg',
+            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1026247_1_SMALL.jpg',
         },
         {
           productBrand: 'Signal',
@@ -373,35 +367,35 @@ export default {
           productName: 'Turuncu Saç Spreyi',
           price: '99,90 TL',
           imageUrl:
-            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1020978_1_SMALL.jpg',
+            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1027251_1_SMALL.jpg',
         },
         {
           productBrand: 'Pastel ',
           productName: 'Dudak Parlatıcısı',
           price: '84,95 TL',
           imageUrl:
-            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1027296_1_SMALL.jpg',
+            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1000333_1_SMALL.jpg',
         },
         {
           productBrand: 'Golden Rose',
           productName: ' Emily 101',
           price: '44,95 TL',
           imageUrl:
-            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1002370_1_SMALL.jpg',
+            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1022190_1_SMALL.jpg',
         },
         {
           productBrand: 'Beauty Girl',
           productName: ' Maskara',
           price: '229,95 TL',
           imageUrl:
-            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1028970_1_SMALL.jpg',
+            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1026247_1_SMALL.jpg',
         },
         {
           productBrand: 'Flormar',
           productName: ' Pearly Parlak Oje',
           price: '49,50 TL',
           imageUrl:
-            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1013797_1_SMALL.jpg',
+            'https://storage.googleapis.com/material_image_bucket/materials_image_approved/1002271_1_SMALL.jpg',
         },
       ],
     };

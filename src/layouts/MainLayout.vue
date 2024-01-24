@@ -43,64 +43,22 @@ import ComponentLink, {
 
 const componentLinks: ComponentLinkProps[] = [
   {
-    title: 'The Page 1',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: '/page1',
-  },
-  {
-    title: 'The Page 2',
-    caption: 'Carousel',
-    icon: 'code',
-    link: '/page2',
-  },
-  {
-    title: 'The Page 3',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: '/page3',
-  },
-  {
-    title: 'The Page 4',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: '/page4',
-  },
-  {
-    title: 'The Page 5',
+    title: 'Ana Sayfa',
     caption: '@quasarframework',
     icon: 'rss_feed',
-    link: '/page5',
+    link: '/page11',
   },
   {
-    title: 'The Page 6',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: '/page6',
-  },
-  {
-    title: 'The Page 7',
+    title: 'Giriş Sayfası',
     caption: '@quasarframework',
     icon: 'rss_feed',
     link: '/page7',
   },
   {
-    title: 'The Page 8',
+    title: 'Ürün Detay',
     caption: '@quasarframework',
     icon: 'rss_feed',
-    link: '/page8',
-  },
-  {
-    title: 'The Page 9',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: '/page9',
-  },
-  {
-    title: 'The Page 10',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: '/page10',
+    link: '/page13',
   },
 ];
 

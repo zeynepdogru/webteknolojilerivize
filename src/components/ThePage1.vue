@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md">
+  <div class="q-pa-md" style="margin-top: -60px">
     <div class="q-gutter-md row items-start">
       <div style="width: 5%"></div>
       <div class="col-3" style="width: 30%">
@@ -70,5 +70,4 @@
     </div>
   </div>
 </template>
-
-<script></script>
+<style></style>

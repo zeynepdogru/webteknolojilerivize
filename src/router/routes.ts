@@ -16,6 +16,9 @@ const routes: RouteRecordRaw[] = [
       { path: 'page8', component: () => import('components/ThePage8.vue') },
       { path: 'page9', component: () => import('components/ThePage9.vue') },
       { path: 'page10', component: () => import('components/ThePage10.vue') },
+      { path: 'page11', component: () => import('pages/MainPage.vue') },
+      { path: 'page12', component: () => import('pages/SignInPage.vue') },
+      { path: 'page13', component: () => import('pages/ClickedPage.vue') },
     ],
   },
 
